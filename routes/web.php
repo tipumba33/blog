@@ -14,15 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user.home');
+    return view('user/home');
 });
 
 Route::get('post', function(){
-    return view('user.post');
+    return view('user/post');
 })->name('post');
 
-Route::get('post', function(){
-    return view('admin.home');
+Route::get('/admin/home', function(){
+    return view('admin/home');
 });
 
 
